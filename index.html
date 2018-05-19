@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload files</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="uploaderInput" multiple>
+                    <label class="custom-file-label" for="uploaderInput">Choose file</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-around uploaderParent" style="margin-top: 40px">
+        <div class="card uploaderBlock" style="width: 18rem; margin-top: 30px">
+            <img class="card-img-top uploaderImg" src="" alt="Card image cap" style="height: 200px; object-fit: contain">
+            <div class="card-body">
+                <p class="card-text">File name: <strong class="uploaderImgName"></strong></p>
+                <p class="card-text">File size: <strong class="uploaderImgSize"></strong></p>
+                <p class="card-text">File type: <strong class="uploaderImgType"></strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="uploader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
